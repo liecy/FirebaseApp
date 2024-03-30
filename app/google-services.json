@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987726015861",
+    "project_id": "login-apps-6f568",
+    "storage_bucket": "login-apps-6f568.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987726015861:android:2525588fe843211429b73c",
+        "android_client_info": {
+          "package_name": "com.rahmi.loginapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiDQ-cqKlwq2Rf2JyexCeaGdWFyQ7daxY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

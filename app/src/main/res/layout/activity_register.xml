@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvTitleRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_register"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:textSize="14dp"
+        android:hint="@string/email"
+        android:padding="12dp"
+        android:layout_below="@id/tvTitleRegister"
+        android:background="@drawable/edt_background"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="22dp"
+        android:textSize="14dp"
+        android:hint="@string/password"
+        android:padding="12dp"
+        android:layout_below="@id/edtEmail"
+        android:background="@drawable/edt_background"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="22dp"
+        android:textSize="14dp"
+        android:hint="@string/confirm_password"
+        android:padding="12dp"
+        android:layout_below="@id/edtPassword"
+        android:background="@drawable/edt_background"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:textSize="14dp"
+        android:text="@string/register"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:layout_below="@id/edtConfirmPassword"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:text="@string/message_register"
+        android:textColor="@color/white"
+        android:layout_below="@id/btnRegister"/>
+
+</RelativeLayout>
