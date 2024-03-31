@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String SHARED_PREF_CREDENTIAL = "mySPC";
 
-    private ActivityMainBinding binding;
-
     SharedPreferences sharedPreferences;
 
     FirebaseAuth mAuth;
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        com.rahmi.loginapps.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
@@ -35,8 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_CREDENTIAL, MODE_PRIVATE);
 
-        binding.btnLogout.setOnClickListener(view1 -> {
-            Logout();
+        binding.btnLogout.setOnClickListener(view1 -> Logout());
+
+        binding.btnChannel.setOnClickListener(view1 -> {
+            Intent intentChannel = new Intent(MainActivity.this, ChannelActivity.class);
+            startActivity(intentChannel);
         });
     }
 
